@@ -1,5 +1,5 @@
 ## What is simple-memcached-cluster-client (SMCC)?
-SMCC is a Java API on top of SpyMemcahced 2.8.12 which distributes keys between Memcached hosts running in stand alone mode. It allows Memcached nodes which doesn't support clustering to horizontally scale as an inmemory memcached cluster.
+SMCC is a Java API on top of SpyMemcahced 2.8.12 which distributes keys between Memcached hosts running in stand alone mode. It allows Memcached nodes which doesn't support clustering out of the box to horizontally scale like a cluster
 
 ##How it works?
 This API simply distributes the keys to memcached nodes. Basically the logic map each key to a memcached host on the basis of key's hashcode.
